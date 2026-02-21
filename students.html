@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students - City University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./city-university-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header" >
+        <h1 >City University</h1>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="result.html">Result</a></li>
+                <li><a href="notice.html">Notice</a></li>
+            </ul>
+        </nav>
+        <main class="main-content">
+            <h2>Students</h2>
+            <form class="student-form">
+                <h2 style="text-align: center;">Student Registation From</h2>
+                <label for="name">Student Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="studentid">Student ID</label>
+                <input type="text" id="studentid" name="studentid" placeholder="Enter your ID" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">-- Select Department --</option>
+                    <option value="cse">CSE</option>
+                    <option value="eee">EEE</option>
+                    <option value="bba">BBA</option>
+                    <option value="law">LAW</option>
+                </select>
+
+                <label>Gender</label>
+                <div class="gender-group">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label>Skills</label>
+                <div class="skills-group">
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="skills" value="JavaScript">
+                    <label for="js">JavaScript</label>
+                    <input type="checkbox" id="python" name="skills" value="Python">
+                    <label for="python">Python</label>
+                </div>
+
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create password" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <footer class="footer">
+        <img src="city-university-logo.png" alt="City University Logo" class="logo">
+        <p>&copy; 2026 City University</p>
+    </footer>
+</body>
+</html>
